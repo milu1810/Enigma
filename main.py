@@ -10,7 +10,7 @@ def menu():
         f2.close()
     LectureMessage()
     SauvegardeMessage()
-    choiDuRetor()
+    choixDuRotor()
     f1.close()
     f2.close()
 
@@ -31,9 +31,9 @@ def SauvegardeMessage(f4=open(r'C:\Users\Lucas\Desktop\Nouveau dossier\nomFichie
     f4.write(texte)
     f4.close()
 
-def choiDuRetor():
+def choixDuRotor():
     reponseEnigma = texte
-    retor = {
+    rotor = {
         "alphabet" : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
           "W", "X", "Y", "Z"],
         "RA": ["E", "K", "M", "F", "L", "G", "D", "Q", "V", "Z", "N", "T", "O", "W", "Y", "H", "X", "U", "S", "P", "A", "I",
@@ -57,32 +57,32 @@ def choiDuRetor():
     if choix == 1:
         for a in reponseEnigma:
             reponseEnigma = ""
-            reponseEnigma += a.join(retor["RA"])
+            reponseEnigma += a.join(rotor["RA"])
     elif choix == 2:
         for a in reponseEnigma:
             reponseEnigma = ""
-            reponseEnigma += a.join(retor["RB"])
+            reponseEnigma += a.join(rotor["RB"])
 
     elif choix == 3:
         for a in reponseEnigma:
             reponseEnigma = ""
-            reponseEnigma += a.join(retor["RC"])
+            reponseEnigma += a.join(rotor["RC"])
     elif choix == 4:
         for a in reponseEnigma:
             reponseEnigma = ""
-            reponseEnigma += a.join(retor["RD"])
+            reponseEnigma += a.join(rotor["RD"])
 
     elif choix == 5:
         for a in reponseEnigma:
             reponseEnigma = ""
-            reponseEnigma += a.join(retor["RE"])
+            reponseEnigma += a.join(rotor["RE"])
 
     print(reponseEnigma)
     for b in reponseEnigma:
         reponseEnigma=""
-        reponseEnigma+=b.join(retor["RFA"])
+        reponseEnigma+=b.join(rotor["RFA"])
     for b in reponseEnigma:
         reponseEnigma=""
-        reponseEnigma+=b.join(retor["RFB"])
+        reponseEnigma+=b.join(rotor["RFB"])
     print(reponseEnigma)
 menu()
